@@ -1,0 +1,172 @@
+---
+layout: default
+---
+
+<section id="banner" class="hero-banner">
+    <div class="banner-container">
+        <img src="/assets/images/hero-banner.webp" class="img-fluid"
+             alt="Scenic View Of Snow Capped Mountains During Night">
+        <div class="banner-text container">
+            <h2>
+                Helping to put more of your</br>
+                hard-earned money back in your</br>
+                <span class="typed-element"></span>
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="d-flex flex-column flex-lg-row">
+        <div class="col-12 col-lg-8 picture-side">
+            <img src="/assets/images/about-img-placeholder.webp" alt="Photo of Woman Using Her Laptop">
+        </div>
+        <div class="col-12 col-lg-4 content-side">
+            <div class="container">
+                <div class="about-heading">
+                    <span class="decoration">Welcome!</span>
+                    <h2 class="about-title">I'm Tiffany</h2>
+                    <h3 class="about-subtitle">CPA, MBA, SFU Alumni</h3>
+                </div>
+                <div class="about-description p-xl-3 p-xxl-5">
+                    <p>I'm a CPA and passionate about helping you and your business succeed.</p>
+                    <p>I help entrepreneur understand and manage the numbers side of their business so that they have
+                        the
+                        clarity to make smart business decisions, increase profits, and reach their financial goals.</p>
+                    <p>If you've ever felt overwhelmed and stressed out about your finances, you're in the right place.
+                        I
+                        have over 4 years of experience as a corporate accountant and have worked with small businesses
+                        across multiple industries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="services-title">SERVICES</h2>
+        <div class="accordion accordion-flush" id="accordionExample">
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Year End Services
+                    </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>As a licensed CPA public practice, I can provide your corporation with all your year end
+                            accounting and tax needs:</p>
+                        <ul>
+                            <li>Financial Statement preparation</li>
+                            <li>Corporate T2 Tax Return - planning and preparation</li>
+                            <li>Annual GST preparation - if applicable</li>
+                            <li>T4 employer summary and slips preparation</li>
+                            <li>T5 dividend summary and slips preparation</li>
+                        </ul>
+                        <p>I also offer fixed price monthly fees if your company needs monthly or quarterly bookkeeping
+                            and year-end services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Personal Tax
+                    </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>T1 Individual personal tax return preparation</li>
+                            <li>Sole proprietorship/self-employed tax return preparation (non-incorporated business or
+                                rental property)
+                            </li>
+                            <li>Final/death tax return preparation</li>
+                            <li>Estate/Trust (T3) Return preparation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Bookkeeping
+                    </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Monthly, quarterly or annual bookkeeping in QuickBooks Online - either some of it or all
+                                of it.</br>
+                                By using QuickBooks Online, we can usually share in the bookkeeping tasks, you do the
+                                invoicing and leaving the rest to me.
+                            </li>
+                            <li>QuickBooks Online support</li>
+                            <li>Preparation of bi-weekly, semi-monthly, or monthly payroll and WCB return preparation
+                            </li>
+                            <li>Monthly or quarterly GST and PST file preparation</li>
+                            <li>Bank and credit card reconciliations</li>
+                            <li>General Ledger review if you have your own bookkeeper but just need a senior level
+                                review each month
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="heading-side col-12 col-lg-4">
+                <h2>LET'S GET</br>IN TOUCH</h2>
+            </div>
+            <div class="form-side col-12 col-lg-8">
+                <p><strong>CONTACT</strong> INFO</p>
+                <div class="contact-container">
+                    <div class="contact-label"><p><strong>Email:</strong></p></div>
+                    <div><p><a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a></p></div>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-label"><p><strong>Phone:</strong></p></div>
+                    <div><a href="tel:{{ site.telephone }}">{{ site.telephone }}</a></p></div>
+                </div>
+                <p>Contact me to see how my accounting expertise and personalized services can save you time, money, and
+                    frustration with managing your finances.</p>
+                <p>For any general inquiries, please fill in the following contact form:</p>
+                <form action="https://formspree.io/f/mbjwzdjp" method="POST">
+                    <div class="row">
+                        <div class="mb-3 col-12 col-lg-6">
+                            <label for="inputName" class="form-label required-field">Your Name</label>
+                            <input type="text" class="form-control" id="inputName" required>
+                        </div>
+                        <div class="mb-3 col-12 col-lg-6">
+                            <label for="inputEmail" class="form-label required-field">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" required>
+                        </div>
+                        <div class="mb-3 col-12">
+                            <label for="inputSubject" class="form-label required-field">Subject</label>
+                            <input type="text" class="form-control" id="inputSubject" required>
+                        </div>
+                        <div class="mb-3 col-12">
+                            <label for="inputMsg" class="form-label required-field">Message</label>
+                            <textarea class="form-control" id="inputMsg" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="col-12 btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+

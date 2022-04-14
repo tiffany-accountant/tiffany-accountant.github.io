@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/.gem/ruby/3.1.1/gems/jekyll-theme-midnight-0.2.0/.idea/jekyll-theme-midnight-0.2.0.iml" filepath="$USER_HOME$/.gem/ruby/3.1.1/gems/jekyll-theme-midnight-0.2.0/.idea/jekyll-theme-midnight-0.2.0.iml" />
+      <module fileurl="file://$USER_HOME$/.gem/ruby/3.1.1/gems/minima-2.5.1/.idea/minima-2.5.1.iml" filepath="$USER_HOME$/.gem/ruby/3.1.1/gems/minima-2.5.1/.idea/minima-2.5.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tiffany-accountant.github.io.iml" filepath="$PROJECT_DIR$/.idea/tiffany-accountant.github.io.iml" />
+    </modules>
+  </component>
+</project>

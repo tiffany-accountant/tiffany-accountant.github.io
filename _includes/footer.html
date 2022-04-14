@@ -1,0 +1,30 @@
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="d-md-flex flex-md-row justify-content-start">
+            <div class="footer-logo col-12 col-md-6 mb-5 mb-lg-0 text-center text-md-start">
+                <img class="site-logo" src="/assets/images/site-logo-white.svg" alt="Tiffany Nguyen, Chartered Professional Accountant">
+            </div>
+            <div class="contact-info col-12 col-md-6 text-center text-md-start">
+
+                <div class="contact-container">
+                    {% if site.email %}
+                        <p><a href="mailto:{{ site.email | encode_email }}" class="col-12"><i class="material-icons">email</i>{{ site.email }}</a></p>
+                    {% endif %}
+                    {% if site.telephone %}
+                        <p><a href="tel:{{ site.telephone }}" class="col-12"><i class="material-icons">phone</i>{{ site.telephone }}</a></p>
+                    {% endif %}
+                </div>
+                {% if site.social-profiles %}
+                <div class="social-media">
+                    {% include social-media.html %}
+                </div>
+                {% endif %}
+                <div class="copyright-text">
+                    <p>Copyright 2022 © Tiffany Nguyen</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
