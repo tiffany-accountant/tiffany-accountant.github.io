@@ -29,14 +29,7 @@ layout: default
                     <h3 class="about-subtitle">CPA, MBA, SFU Alumni</h3>
                 </div>
                 <div class="about-description">
-                    <p>I'm a CPA and passionate about helping you and your business succeed.</p>
-                    <p>I help entrepreneur understand and manage the numbers side of their business so that they have
-                        the
-                        clarity to make smart business decisions, increase profits, and reach their financial goals.</p>
-                    <p>If you've ever felt overwhelmed and stressed out about your finances, you're in the right place.
-                        I
-                        have over 4 years of experience as a corporate accountant and have worked with small businesses
-                        across multiple industries.</p>
+                    <p>TNG provides accounting services for small and medium sized businesses and individuals with the highest quality at an affordable price. We help business owners and individuals plan their long-term financial success and obtain peace of mind when it comes to managing their books. Let us take care of your books so that you can make time for what matters most to you.</p>
                 </div>
             </div>
         </div>
@@ -51,23 +44,18 @@ layout: default
                 <h3 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Year End Services
+                        Bookkeeping
                     </button>
                 </h3>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                      data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>As a licensed CPA public practice, I can provide your corporation with all your year end
-                            accounting and tax needs:</p>
                         <ul>
-                            <li>Financial Statement preparation</li>
-                            <li>Corporate T2 Tax Return - planning and preparation</li>
-                            <li>Annual GST preparation - if applicable</li>
-                            <li>T4 employer summary and slips preparation</li>
-                            <li>T5 dividend summary and slips preparation</li>
+                            <li>Fixed monthly fees for full cycle monthly bookkeeping using QuickBooks Online.</li>
+                            <li>Managing general ledger, accounts receivable, accounts payable, and fixed asset schedule.</li>
+                            <li>Bi-weekly, semi-monthly, and monthly payroll services to employees and management.</li>
+                            <li>Filing GST, PST, WCB and Payroll Remittances. We ensure these fillings are accurate and on time to avoid interests and penalties.</li>
                         </ul>
-                        <p>I also offer fixed price monthly fees if your company needs monthly or quarterly bookkeeping
-                            and year-end services.</p>
                     </div>
                 </div>
             </div>
@@ -75,19 +63,18 @@ layout: default
                 <h3 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Personal Tax
+                        Corporate Tax Return and Year End services
                     </button>
                 </h3>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                      data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                            <li>T1 Individual personal tax return preparation</li>
-                            <li>Sole proprietorship/self-employed tax return preparation (non-incorporated business or
-                                rental property)
-                            </li>
-                            <li>Final/death tax return preparation</li>
-                            <li>Estate/Trust (T3) Return preparation</li>
+                            <li>Financial Statement preparation</li>
+                            <li>Corporate T2 Tax Return</li>
+                            <li>Annual GST preparation</li>
+                            <li>T4 employer summary and slips preparation</li>
+                            <li>T5 dividend summary and slips preparation</li>
                         </ul>
                     </div>
                 </div>
@@ -96,26 +83,15 @@ layout: default
                 <h3 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Bookkeeping
+                        Personal Tax Return
                     </button>
                 </h3>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                      data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
-                            <li>Monthly, quarterly or annual bookkeeping in QuickBooks Online - either some of it or all
-                                of it.</br>
-                                By using QuickBooks Online, we can usually share in the bookkeeping tasks, you do the
-                                invoicing and leaving the rest to me.
-                            </li>
-                            <li>QuickBooks Online support</li>
-                            <li>Preparation of bi-weekly, semi-monthly, or monthly payroll and WCB return preparation
-                            </li>
-                            <li>Monthly or quarterly GST and PST file preparation</li>
-                            <li>Bank and credit card reconciliations</li>
-                            <li>General Ledger review if you have your own bookkeeper but just need a senior level
-                                review each month
-                            </li>
+                            <li>T1 Individual personal tax return preparation</li>
+                            <li>Sole proprietorship/self-employed tax return preparation (non-incorporated business or rental property)</li>
                         </ul>
                     </div>
                 </div>
@@ -132,14 +108,18 @@ layout: default
             </div>
             <div class="form-side col-12 col-lg-8">
                 <p><strong>CONTACT</strong> INFO</p>
+                {% if site.email %}
                 <div class="contact-container">
                     <div class="contact-label"><p><strong>Email:</strong></p></div>
                     <div><p><a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a></p></div>
                 </div>
+                {% endif %}
+                {% if site.telephone %}
                 <div class="contact-container">
                     <div class="contact-label"><p><strong>Phone:</strong></p></div>
                     <div><a href="tel:{{ site.telephone }}">{{ site.telephone }}</a></p></div>
                 </div>
+                {% endif %}
                 <p>Contact me to see how my accounting expertise and personalized services can save you time, money, and
                     frustration with managing your finances.</p>
                 <p>For any general inquiries, please fill in the following contact form:</p>
