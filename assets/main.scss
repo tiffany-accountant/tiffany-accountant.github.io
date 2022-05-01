@@ -91,12 +91,12 @@ html, body {
         width: 100vw;
         height: 100vh;
         object-fit: cover;
-        filter: brightness(.4);
+        filter: brightness(.8);
       }
 
       .banner-text {
         position: absolute;
-        top: calc((100vh - 108px) / 2 + 108px);
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: #fff;
@@ -104,9 +104,19 @@ html, body {
         text-align: center;
         height: 160px;
 
-        h2 {
-          font-size: calc(1.325rem + 1.2vw);
+        h2.banner-title {
+          font-size: 46px;
           line-height: 1.5;
+        }
+
+        h3.banner-subtitle {
+          font-size: 20px;
+          margin-bottom: 32px;
+        }
+
+        .banner-text-overlay {
+          padding: 10px;
+          background-color: rgba(0,52,83,0.4);
         }
       }
     }
@@ -395,12 +405,12 @@ html, body {
         width: 100vw;
         height: 100vh;
         object-fit: cover;
-        filter: brightness(.4);
+        filter: brightness(.8);
       }
 
       .banner-text {
         position: absolute;
-        top: calc((100vh - 108px) / 2 + 108px);
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: #fff;
@@ -408,9 +418,19 @@ html, body {
         text-align: center;
         height: 160px;
 
-        h2 {
-          font-size: calc(1.325rem + 1.2vw);
+        h2.banner-title {
+          font-size: 50px;
           line-height: 1.5;
+        }
+
+        h3.banner-subtitle {
+          font-size: 20px;
+          margin-bottom: 32px;
+        }
+
+        .banner-text-overlay {
+          padding: 10px;
+          background-color: rgba(0,52,83,0.4);
         }
       }
     }
@@ -633,21 +653,25 @@ html, body {
 // LAPTOP / TABLET DISPLAY
 @media only screen and (min-width: 768px) {
   /* --------------------------------
-   *   HERO BANNER
+   *   HERO BANNER 
    * -------------------------------- */
-  .hero-banner {
+   .hero-banner {
     .banner-container {
       .banner-text {
-        h2 {
-          font-size: calc(1.325rem + 2.2vw);
+        h2.banner-title {
+          height: 320px;
         }
       }
     }
   }
+  
 }
 
 // DESKTOP
 @media only screen and (min-width: 992px) {
+  /* --------------------------------
+   *   NAVIGATION
+   * -------------------------------- */
   nav#navigation {
     .navbar-collapse {
       .navbar-nav {
@@ -662,6 +686,47 @@ html, body {
         }
       }
      }
+    }
+  }
+
+  /* --------------------------------
+   *   HERO BANNER 
+   * -------------------------------- */
+   .hero-banner {
+    .banner-container {
+      .banner-text {
+        max-width: 68%;
+      }
+    }
+  }
+}
+
+// WIDE SCREEN 1
+@media only screen and (min-width: 1200px) {
+  /* --------------------------------
+   *   HERO BANNER 
+   * -------------------------------- */
+   .hero-banner {
+    .banner-container {
+      .banner-text {
+        h2.banner-title {
+          height: 245px;
+        }
+      }
+    }
+  }
+}
+
+// WIDE SCREEN 2
+@media only screen and (min-width: 1400px) {
+  /* --------------------------------
+   *   HERO BANNER 
+   * -------------------------------- */
+   .hero-banner {
+    .banner-container {
+      .banner-text {
+        max-width: 62%;
+      }
     }
   }
 }
