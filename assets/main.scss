@@ -128,43 +128,51 @@ html, body {
   section#about {
     .picture-side {
       img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
       }
     }
 
     .content-side {
-      background-color: #f3f3fa;
-      padding: 1.8rem 2.4rem;
+      background-color: #fff;
+      padding: 1.25rem;
+      margin: -2.5rem 4% 0;
+      border-radius: 0 0.625rem 0 0.625rem;
+      box-shadow: 0 0.125rem 0.5rem 0 rgba(170, 170, 170, .5);
+      max-width: 92%;
 
       .about-heading {
-        margin-bottom: 1rem;
-
-        .decoration {
-          font-family: 'Tangerine', cursive;
-          font-size: 3.125rem;
-          text-shadow: 2px 2px 2px #468847;
-          color: #003D03;
-          display: block;
-          line-height: 1;
-          margin-left: -1.6rem;
-        }
+        margin-bottom: 2rem;
 
         .about-title {
-          font-family: 'Bellefair', serif;
-          font-size: 2.438rem;
-          margin-bottom: 0;
+          font-size: 2rem;
+          line-height: 2.5rem;
+          font-weight: 700;
+          font-family: "Outfit", sans-serif;
+          color: #003453;
+          position: relative;
+          padding-top: 2rem;
+
+          &::before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4.375rem;
+            height: 0.125rem;
+            border-top: 0.1875rem solid #40b4e5;
+          }
         }
 
         .about-subtitle {
           font-family: 'Raleway', sans-serif;
+          color: #003453;
           font-size: 1.25rem;
           font-weight: 600;
+          margin-bottom: 0;
         }
       }
-
-
     }
   }
 
@@ -173,7 +181,7 @@ html, body {
    * -------------------------------- */
   section#services {
     .services-title {
-      color: #102e52;
+      color: #003453;
       text-align: center;
       font-size: 2.625rem;
     }
@@ -182,7 +190,7 @@ html, body {
       margin-top: 3rem;
 
       .accordion-item {
-        border-bottom: 4px solid rgb(53, 121, 183);
+        border-bottom: 4px solid #003453;
 
         .accordion-header {
           margin-bottom: 0.5rem;
@@ -439,46 +447,54 @@ html, body {
   /* --------------------------------
    *   ABOUT SECTION
    * -------------------------------- */
-  section#about {
+   section#about {
     .picture-side {
       img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
       }
     }
 
     .content-side {
-      background-color: #f3f3fa;
-      padding: 1.8rem 2.4rem;
+      background-color: #fff;
+      padding: 1.25rem;
+      margin: -2.5rem 4% 0;
+      border-radius: 0 0.625rem 0 0.625rem;
+      box-shadow: 0 0.125rem 0.5rem 0 rgba(170, 170, 170, .5);
+      max-width: 92%;
 
       .about-heading {
-        margin-bottom: 1rem;
-
-        .decoration {
-          font-family: 'Tangerine', cursive;
-          font-size: 3.125rem;
-          text-shadow: 2px 2px 2px #468847;
-          color: #003D03;
-          display: block;
-          line-height: 1;
-          margin-left: -1.6rem;
-        }
+        margin-bottom: 2rem;
 
         .about-title {
-          font-family: 'Bellefair', serif;
-          font-size: 2.438rem;
-          margin-bottom: 0;
+          font-size: 2rem;
+          line-height: 2.5rem;
+          font-weight: 700;
+          font-family: "Outfit", sans-serif;
+          color: #003453;
+          position: relative;
+          padding-top: 2rem;
+
+          &::before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4.375rem;
+            height: 0.125rem;
+            border-top: 0.1875rem solid #40b4e5;
+          }
         }
 
         .about-subtitle {
           font-family: 'Raleway', sans-serif;
+          color: #003453;
           font-size: 1.25rem;
           font-weight: 600;
+          margin-bottom: 0;
         }
       }
-
-
     }
   }
 
@@ -487,7 +503,7 @@ html, body {
    * -------------------------------- */
   section#services {
     .services-title {
-      color: #102e52;
+      color: #003453;
       text-align: center;
       font-size: 2.625rem;
     }
@@ -496,7 +512,7 @@ html, body {
       margin-top: 3rem;
 
       .accordion-item {
-        border-bottom: 4px solid rgb(53, 121, 183);
+        border-bottom: 4px solid #003453;
 
         .accordion-header {
           margin-bottom: 0.5rem;
@@ -699,6 +715,29 @@ html, body {
       }
     }
   }
+
+  /* --------------------------------
+   *   ABOUT SECTION
+   * -------------------------------- */
+   section#about {
+    div:first-of-type {
+      position: relative;
+
+      .content-side {
+        padding: 4rem;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 2;
+        width: 100%;
+        height: auto;
+        max-width: 37.5rem;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+   }
 }
 
 // WIDE SCREEN 1
