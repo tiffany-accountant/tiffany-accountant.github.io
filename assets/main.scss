@@ -27,57 +27,52 @@ html, body {
 @media only screen and (max-width: 576px) {
 
   /* --------------------------------
-   *   MOBILE NAVBAR
+   *   NAVIGATION
    * -------------------------------- */
-  #mobile-navbar {
-    display: flex;
-    justify-content: space-around;
-    background: transparent;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    width: 100vw;
+   nav#navigation {
+    background-color: #fff;
 
-    nav {
-      width: 68vw;
-      background-color: transparent;
-      margin: 0;
+    .navbar-toggler {
+      .navbar-toggler-icon {
+        width: 100%;
+        height: 100%;
 
-      &::before {
-        content: "";
-        position: absolute;
-        border: none;
-        top: 0px;
-        bottom: -90%;
-        left: 0px;
-        right: 0px;
-        z-index: -1;
-        background: rgba(197, 198, 208, 0.8);
-        transform: perspective(20em) rotateX(-45deg);
-        transform-origin: top;
-        margin: 0 5vw;
+        .material-icons-round {
+          font-size: 36px;
+          font-weight: 600;  
+          color: #003453;
+        }
       }
+    }
 
-      .navbar {
-        margin: 0.2rem 0;
-        padding: 0;
-        list-style: none;
+    .navbar-collapse {
+      .navbar-nav {
+        margin: 20px 0 0;
 
-        .nav-item {
-          margin: 0.2rem;
+        .nav-link {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: #003453;
+          text-decoration: none;
 
-          .nav-link {
-            width: 3.75rem;
-            height: 3.75rem;
-            border: 4px black solid;
-            border-radius: 50%;
-            text-align: center;
-            padding: 10px 0 0 0;
-            background-color: #ADD8E6;
+          &::before {
+           display: block;
+           content: '';
+           width: 100%;
+           border-bottom: solid 3px #003453;
+           position: relative;
+           top: -15px;
+          }
 
-            .material-icons-two-tone {
-              font-size: 2rem;
-            }
+          &:hover{
+            background-color: rgba(0, 52, 83, 0.6);
+            color: white;
+            border-radius: 5px;
+          }
+
+          .material-icons-round {
+            margin: 0 10px;
+            vertical-align: sub;
           }
         }
       }
@@ -111,6 +106,7 @@ html, body {
 
         h2 {
           font-size: calc(1.325rem + 1.2vw);
+          line-height: 1.5;
         }
       }
     }
@@ -334,62 +330,58 @@ html, body {
 @media only screen and (min-width: 576px) {
 
   /* --------------------------------
-   *   MOBILE NAVBAR
+   *   NAVIGATION
    * -------------------------------- */
-  #mobile-navbar {
-    display: flex;
-    justify-content: space-around;
-    background: transparent;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    width: 100vw;
+   nav#navigation {
+     background-color: #fff;
 
-    nav {
-      width: 68vw;
-      background-color: transparent;
-      margin: 0;
+     .navbar-toggler {
+       .navbar-toggler-icon {
+         width: 100%;
+         height: 100%;
 
-      &::before {
-        content: "";
-        position: absolute;
-        border: none;
-        top: 0px;
-        bottom: -90%;
-        left: 0px;
-        right: 0px;
-        z-index: -1;
-        background: rgba(197, 198, 208, 0.8);
-        transform: perspective(20em) rotateX(-45deg);
-        transform-origin: top;
-        margin: 0 5vw;
-      }
+         .material-icons-round {
+           font-size: 36px;
+           font-weight: 600;  
+           color: #003453;
+         }
+       }
+     }
 
-      .navbar {
-        margin: 0.2rem 0;
-        padding: 0;
-        list-style: none;
+     .navbar-collapse {
+       .navbar-nav {
+         margin: 20px 0 0;
 
-        .nav-item {
-          margin: 0.2rem;
+         .nav-link {
+           font-size: 1.25rem;
+           font-weight: 600;
+           color: #003453;
+           text-decoration: none;
 
-          .nav-link {
-            width: 3.75rem;
-            height: 3.75rem;
-            border: 4px black solid;
-            border-radius: 50%;
-            text-align: center;
-            padding: 10px 0 0 0;
-            background-color: #ADD8E6;
+           &::before {
+            display: block;
+            content: '';
+            width: 100%;
+            border-bottom: solid 3px #003453;
+            position: relative;
+            top: -15px;
+           }
 
-            .material-icons-two-tone {
-              font-size: 2rem;
-            }
+           &:hover{
+            background-color: rgba(0, 52, 83, 0.6);
+            color: white;
+            border-radius: 5px;
           }
-        }
-      }
-    }
-  }
+
+           .material-icons-round {
+             margin: 0 10px;
+             vertical-align: sub;
+           }
+         }
+       }
+     }
+   }
+  
 
   /* --------------------------------
    *   HERO BANNER
@@ -418,6 +410,7 @@ html, body {
 
         h2 {
           font-size: calc(1.325rem + 1.2vw);
+          line-height: 1.5;
         }
       }
     }
@@ -639,64 +632,36 @@ html, body {
 
 // LAPTOP / TABLET DISPLAY
 @media only screen and (min-width: 768px) {
-
-  /* --------------------------------
-   *   HEADER SECTION
-   * -------------------------------- */
-  div#layout-container {
-    margin-top: 108px;
-
-    #header {
-      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
-      -webkit-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
-      z-index: 500;
-      background-color: white;
-
-      .navbar {
-        margin: 16px 0;
-      }
-
-      .main-nav {
-        left-padding: 0;
-        margin: 0;
-        list-style-type: none;
-
-        .nav-item a {
-          color: $text-color;
-          border: 2px solid $grey-color;
-          border-radius: 4px;
-          margin: 0 4px;
-
-          &:hover {
-            text-decoration: none;
-            color: $background-color;
-            background-color: $brand-color;
-            border-color: $brand-color;
-          }
-        }
-      }
-    }
-  }
-
   /* --------------------------------
    *   HERO BANNER
    * -------------------------------- */
   .hero-banner {
     .banner-container {
-      height: calc(100vh - 108px);
-
-      img {
-        height: calc(100vh - 108px);
-      }
-
       .banner-text {
-        top: calc((100vh - 108px) / 2 + 108px);
-
         h2 {
           font-size: calc(1.325rem + 2.2vw);
         }
       }
+    }
+  }
+}
+
+// DESKTOP
+@media only screen and (min-width: 992px) {
+  nav#navigation {
+    .navbar-collapse {
+      .navbar-nav {
+        margin-top: 0;
+
+        .nav-link {
+        &::before{
+          display: none;
+        } 
+        &:hover{
+          background-color: rgba(0, 52, 83, 1);
+        }
+      }
+     }
     }
   }
 }

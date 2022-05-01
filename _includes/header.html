@@ -1,35 +1,20 @@
 <!-- Page Header -->
-<div id="layout-container" class="d-none d-md-block">
-    <header id="header" class="fixed-top">
-        <div class="navbar navbar-light bg-transparent">
-            <div class="container">
-                <div class="header-logo">
-                    <img class="site-logo" src="/assets/images/site-logo-blue.svg" alt="Tiffany Nguyen, Chartered Professional Accountant">
-                </div>
-                <nav role="navigation">
-                    <ul class="navbar d-lg-inline-flex flex-lg-row main-nav">
-                        <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-</div>
+<nav class="navbar navbar-expand-lg py-3 py-lg-4 fixed-top" role="navigation" id="navigation">
+    <div class="container">
 
-<div id="mobile-navbar" class="d-md-none">
-    <nav role="navigation">
-        <ul class="navbar d-flex flex-row justify-content-evenly align-items-center main-nav">
-            <li class="nav-item">
-                <a href="#about" class="nav-link"><i class="material-icons-two-tone">person</i></a>
-            </li>
-            <li class="nav-item">
-                <a href="#services" class="nav-link"><i class="material-icons-two-tone">design_services</i></a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link"><i class="material-icons-two-tone">handshake</i></a>
-            </li>
-        </ul>
-    </nav>
-</div>
+            <a class="navbar-brand" href="#">Site Logo</a>
+            <button id="mobile-menu-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i id="mobile-menu-icon" class="material-icons-round">menu</i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item my-2 mx-lg-2"><a href="#about" class="nav-link"><i class="material-icons-round d-lg-none">person</i>ABOUT</a></li>
+                    <li class="nav-item my-2 mx-lg-2"><a href="#services" class="nav-link"><i class="material-icons-round d-lg-none">design_services</i>SERVICES</a></li>
+                    <li class="nav-item my-2 mx-lg-2"><a href="#contact" class="nav-link"><i class="material-icons-round d-lg-none">handshake</i>CONTACT</a></li>
+                </ul>
+            </div>
+
+    </div>
+</nav>
