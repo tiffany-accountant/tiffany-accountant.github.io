@@ -1,26 +1,35 @@
 <!-- Footer -->
-<footer id="footer">
+<footer id="footer" class="py-5">
     <div class="container">
         <div class="d-md-flex flex-md-row justify-content-start">
             <div class="footer-logo col-12 col-md-6 mb-5 mb-lg-0 text-center text-md-start">
-                <img class="site-logo" src="/assets/images/site-logo-white.svg" alt="Tiffany Nguyen, Chartered Professional Accountant">
+                <a class="navbar-brand" href="#"><img class="site-logo" src="/assets/images/site-logo-white.svg" alt="Tiffany Nguyen, Chartered Professional Accountant"></a>
             </div>
-            <div class="contact-info col-12 col-md-6 text-center text-md-start">
+            <div class="contact-info col-12 col-md-6 text-center text-md-start row">
+                <div class="col-12 col-xl-6 my-3 mt-md-0">
+                    <p class="m-0"><strong>WORKING HOURS</strong></p>
+                    <ul class="list-unstyled m-0">
+                        <li>Monday - Friday: 9am - 6pm</li>
+                        <li>Saturday: By appointment</li>
+                        <li>Sunday: By appointment</li> 
+                    </ul>
+                </div>
 
-                <div class="contact-container">
+                <div class="col-12 col-xl-6 my-3 mt-xl-0">
                     {% if site.email %}
-                        <p><a href="mailto:{{ site.email | encode_email }}" class="col-12"><i class="material-icons">email</i>{{ site.email }}</a></p>
+                        <p class="m-0"><a href="mailto:{{ site.email | encode_email }}" class="col-12"><i class="material-icons">email</i>{{ site.email }}</a></p>
                     {% endif %}
                     {% if site.telephone %}
-                        <p><a href="tel:{{ site.telephone }}" class="col-12"><i class="material-icons">phone</i>{{ site.telephone }}</a></p>
+                        <p class="m-0"><a href="tel:{{ site.telephone }}" class="col-12"><i class="material-icons">phone</i>{{ site.telephone }}</a></p>
                     {% endif %}
+                    <p class="m-0"><a href="https://goo.gl/maps/2S4EhS8BiatKM18FA" class="col-12" target="_blank"><i class="material-icons">pin_drop</i>British Columbia, Canada</a></p>
                 </div>
                 {% if site.social-profiles %}
-                <div class="social-media">
-                    {% include social-media.html %}
-                </div>
+                    <div class="social-media d-none">
+                        {% include social-media.html %}
+                    </div>
                 {% endif %}
-                <div class="copyright-text">
+                <div class="copyright-text col-12 mt-5">
                     <p>Copyright 2022 © TNG Accounting</p>
                 </div>
 
