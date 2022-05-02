@@ -110,12 +110,12 @@ html, body {
         height: 160px;
 
         h2.banner-title {
-          font-size: 36px;
+          font-size: 32px;
           line-height: 1.5;
         }
 
         h3.banner-subtitle {
-          font-size: 20px;
+          font-size: 18px;
           margin-bottom: 32px;
         }
 
@@ -211,7 +211,7 @@ html, body {
         }
 
         button {
-          font-size: 2rem;
+          font-size: 1.2rem;
           letter-spacing: 0.6px;
         }
       }
@@ -411,12 +411,12 @@ html, body {
         height: 160px;
 
         h2.banner-title {
-          font-size: 36px;
+          font-size: 32px;
           line-height: 1.5;
         }
 
         h3.banner-subtitle {
-          font-size: 20px;
+          font-size: 18px;
           margin-bottom: 32px;
         }
 
@@ -512,7 +512,7 @@ html, body {
         }
 
         button {
-          font-size: 2rem;
+          font-size: 1.2rem;
           letter-spacing: 0.6px;
         }
       }
@@ -643,6 +643,18 @@ html, body {
     }
   }
   
+  /* --------------------------------
+   *  SERVICES SECTION
+   * -------------------------------- */
+   section#services {
+     div.accordion {
+       .accordion-item {
+         button {
+           font-size: 2rem;
+         }
+       }
+     }
+   }
 }
 
 // DESKTOP
